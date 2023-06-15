@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seçilen Marka İlanları</title>
+</head>
+<body>
+    <h1>Seçilen Marka İlanları</h1>
+    <ul>
+        {% for ad in ads %}
+        <li>{{ ad.Model }} - {{ ad.Fiyat }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
